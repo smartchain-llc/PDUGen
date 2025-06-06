@@ -1,0 +1,14 @@
+cmake_minimum_required(VERSION 3.22.0)
+# set(CMAKE_CXX_COMPILER /usr/bin/gcc)
+project(CPP LANGUAGES C CXX)
+
+enable_testing()
+set(CXX_STANDARD 23)
+set(CXX_STANDARD_REQUIRED TRUE)
+set(CMAKE_BUILD_TYPE "Debug")
+set(CMAKE_CXX_FLAGS "-std=c++23 -fdiagnostics-color=always")
+
+message("[PDUGEN] -- Pre add")
+add_subdirectory(core)
+add_subdirectory(tests)
+add_subdirectory(ui)
