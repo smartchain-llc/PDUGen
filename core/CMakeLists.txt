@@ -8,4 +8,5 @@ add_library(
 target_include_directories(
     pdugen
     INTERFACE ./pdus/
+    INTERFACE ./Generator
 )
